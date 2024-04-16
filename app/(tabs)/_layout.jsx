@@ -1,7 +1,8 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, Text, View } from "react-native";
 import React from "react";
 import { Tabs, Redirect } from "expo-router";
 import { icons } from "../../constants";
+import { StatusBar } from "expo-status-bar";
 
 const TabIcon = ({ icon, color, name, focused }) => {
   return (
@@ -97,10 +98,10 @@ const TabsRoot = () => {
           }}
         />
       </Tabs>
+      <StatusBar backgroundColor="#111d22" style="light" />
     </>
   );
 };
 
 export default TabsRoot;
 
-const styles = StyleSheet.create({});
