@@ -1,11 +1,12 @@
-import React from "react";
 import { Redirect, Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { useGlobalContext } from "../../context/GlobalProvider";
-import { Loader } from "../../components/Loader"
 
-const AuthRoot = () => {
+import { Loader } from "../../components/Loader";
+import { useGlobalContext } from "../../context/GlobalProvider";
+
+const AuthLayout = () => {
   const { loading, isLogged } = useGlobalContext();
+
   if (!loading && isLogged) return <Redirect href="/home" />;
 
   return (
@@ -17,21 +18,18 @@ const AuthRoot = () => {
             headerShown: false,
           }}
         />
-
         <Stack.Screen
           name="sign-up"
           options={{
             headerShown: false,
           }}
         />
-
       </Stack>
-
-      <Loader isLoading={loading} />
+{/* 
+      <Loader isLoading={loading} /> */}
       <StatusBar backgroundColor="#161622" style="light" />
     </>
   );
 };
 
-export default AuthRoot;
-
+export default AuthLayout;

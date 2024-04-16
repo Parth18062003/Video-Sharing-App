@@ -34,7 +34,8 @@ export default function App() {
             />
           </View>
 
-          <Text className="text-sm font-pregular text-gray-100 mt-7 text-center">
+          <Text className="text-sm text-gray-100 mt-7 text-center"
+          style={{fontFamily:"Poppins-Regular"}}>
             Where Creativity Meets Innovation: Embark on a Journey of Limitless
             Exploration with Aora
           </Text>
