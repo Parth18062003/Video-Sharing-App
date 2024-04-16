@@ -52,7 +52,7 @@ const TabsRoot = () => {
             ),
           }}
         />
-        <Tabs.Screen
+{/*         <Tabs.Screen
           name="bookmark"
           options={{
             title: "Bookmark",
@@ -66,7 +66,7 @@ const TabsRoot = () => {
               />
             ),
           }}
-        />
+        /> */}
         <Tabs.Screen
           name="create"
           options={{

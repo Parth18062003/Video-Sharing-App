@@ -18,7 +18,7 @@ const FormField = ({
       <Text className="text-base text-gray-100"
       style={{fontFamily:"Poppins-Medium"}}>{title}</Text>
 
-      <View className="w-full h-16 px-4 bg-black-100 rounded-2xl border-2 border-black-200 focus:border-[#294856] flex flex-row items-center">
+      <View className="w-full h-16 px-4 bg-foreground rounded-2xl border-2 border-[#232533] focus:border-[#294856] flex flex-row items-center">
         <TextInput
           className="flex-1 text-white text-base"
           style={{fontFamily:"Poppins-SemiBold"}}
